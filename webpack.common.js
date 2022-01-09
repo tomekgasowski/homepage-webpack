@@ -88,5 +88,23 @@ module.exports = {
       chunks: ["index", "another"],
       filename: "another.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/homepage-grid.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "homepage-grid.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/homepage-kotki.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "homepage-kotki.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/homepage-notes.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "homepage-notes.html",
+    }),
   ],
 };
