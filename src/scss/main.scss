@@ -23,12 +23,16 @@ body {
   margin-bottom: 48px;
   &__title {
       font-size: 45px;
-      color: rgb(0, 255, 55);
+      color: rgb(255, 0, 0);
     }
 }
 
 .navigation {
+<<<<<<< HEAD
   background-color: #ffe600;
+=======
+  background-color: #ff0000;
+>>>>>>> test
   border-radius: 18px;
   padding: 8px;
   display: flex;
