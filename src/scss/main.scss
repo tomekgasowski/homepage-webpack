@@ -52,14 +52,28 @@ body {
     }
 }
 
+@keyframes lata {
+  0%, 100% {
+    transform: translate(0, 0);
+    
+  };
+
+  50% {
+    transform: translate(0, -30%);
+  };
+};
+
 .about {
   margin-bottom: 32px;
   border: 2px greenyellow solid;
   border-radius: 5px;
   padding: 8px;
-  overflow: hidden;
   &__heading {
+      display: inline-block;
       color: rgba(33, 173, 166, 0.767);
+      &--animated {
+        animation: lata 2s ease-in-out infinite;
+      }
       &::before {
           content: "";
           display: inline-block;
@@ -96,6 +110,16 @@ img {
   max-width: 100%;
 }
 
+// @keyframes hop {
+//   0% {
+//     transform: translate(0, 0) 
+//   };
+//   100% {
+//     transform: translate(0,-4px)
+//   }; 
+  
+// };
+
 .week-summary {
   margin-bottom: 32px;
   border: 2px rgb(255, 230, 0) solid;
@@ -103,12 +127,19 @@ img {
   padding: 8px;
   &__heading {
       color: rgba(187, 115, 22, 0.767);
+      
       &::before {
           content: "😸";
           font-weight: 100;
-          display: inline-block;
+          display: inline-block; 
+          transition: transform .1s linear;
         }
     }
+}
+
+.week-summary__heading:hover::before {
+  // animation: hop .5s ease-in-out forwards;
+  transform: translate(0, -4px);
 }
 
 .week-summary-grid {
