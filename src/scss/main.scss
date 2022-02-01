@@ -125,6 +125,12 @@ img {
   border: 2px rgb(255, 230, 0) solid;
   border-radius: 5px;
   padding: 8px;
+  &:hover {
+    border-color:rgb(255, 0, 0);
+    .week-summary__heading:before {
+      transform: translate(0, -4px);
+    }
+  }
   &__heading {
       color: rgba(187, 115, 22, 0.767);
       
@@ -137,6 +143,7 @@ img {
     }
 }
 
+//it's just a drill
 .week-summary__heading:hover::before {
   // animation: hop .5s ease-in-out forwards;
   transform: translate(0, -4px);
