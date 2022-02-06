@@ -23,6 +23,12 @@ date.innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
 fetch('https://api.github.com/users/tomekgasowski/repos?sort=created&direction=asc')
     .then(resp => resp.json())
     .then(resp => {
+        for (let repo of resp) {
+            const {name, html_url} = repo;
+            const repositoryList = document.querySelector('.list--js');
+            const repositoryListTemplate = `<li class="list__item">${name}: URL: <a href="${html_url}">${name}</li>`;
+            repositoryList.innerHTML += repositoryListTemplate; 
+        }
 
     })
     .catch(error => {
