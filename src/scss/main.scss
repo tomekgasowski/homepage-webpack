@@ -27,6 +27,25 @@ body {
     }
 }
 
+.list {
+  font-size: 26px;
+  border: 1px yellow solid;
+  border-radius: 8px;
+  padding: 4px;
+  padding-left: 34px;
+  background-color: rgb(255, 230, 0);
+  
+}
+
+.list__item {
+  margin: 2px;
+  border: 2px green solid;
+  border-radius: 8px;
+  padding-left: 4px; 
+  margin-bottom: 4px;
+  background-color: rgba(26, 145, 99, 0.733);
+}
+
 .navigation {
   background-color: #ff0000;
   border-radius: 18px;
@@ -185,6 +204,14 @@ img {
     margin-top: 0;
   }
 
+  .list {
+    
+  }
+
+  .list__item {
+   
+  }
+
   .navigation {
     background-color: #d4440b7c;
     border-radius: 0;
@@ -210,7 +237,7 @@ img {
 
   .navigation__link {
     background-color: rgb(28, 74, 134);
-    color: rgb(255, 255, 255);
+    color: rgb(177, 86, 86);
     margin: 8px;
   }
 }
