@@ -19,3 +19,12 @@ console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
 const date = document.querySelector('.date');
 
 date.innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+fetch('https://api.github.com/users/tomekgasowski/repos?sort=created&direction=asc')
+    .then(resp => resp.json())
+    .then(resp => {
+
+    })
+    .catch(error => {
+        console.log("no nie, no po prostu nie");
+    });
